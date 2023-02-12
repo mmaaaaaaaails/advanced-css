@@ -11,6 +11,10 @@
 
     border: none;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      padding: 1rem 3rem;
+    }
   }
 
   &:hover {

@@ -63,9 +63,29 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="./img/nat-1-large.jpg" alt="photo-1" class="composition__photo composition__photo--p1">
-                        <img src="./img/nat-2-large.jpg" alt="photo-2" class="composition__photo composition__photo--p2">
-                        <img src="./img/nat-3-large.jpg" alt="photo-3" class="composition__photo composition__photo--p3">
+
+                        <img srcset="./img/nat-1.jpg 300w, ./img/nat-1-large.jpg"
+                             sizes="(max-width: 900px 20vw, (max-width: 600px) 30vw, 300px)"
+                             alt="photo"
+                             class="composition__photo composition__photo--p1"
+                             src="./img/nat-1-large.jpg"
+                        >
+                        <img srcset="./img/nat-2.jpg 300w, ./img/nat-2-large.jpg"
+                             sizes="(max-width: 900px 20vw, (max-width: 600px) 30vw, 300px)"
+                             alt="photo"
+                             class="composition__photo composition__photo--p2"
+                             src="./img/nat-2-large.jpg"
+                        >
+                        <img srcset="./img/nat-3.jpg 300w, ./img/nat-3-large.jpg"
+                             sizes="(max-width: 900px 20vw, (max-width: 600px) 30vw, 300px)"
+                             alt="photo"
+                             class="composition__photo composition__photo--p3"
+                             src="./img/nat-3-large.jpg"
+                        >
+
+<!--                        <img src="./img/nat-1-large.jpg" alt="photo-1" class="composition__photo composition__photo&#45;&#45;p1">-->
+<!--                        <img src="./img/nat-2-large.jpg" alt="photo-2" class="composition__photo composition__photo&#45;&#45;p2">-->
+<!--                        <img src="./img/nat-3-large.jpg" alt="photo-3" class="composition__photo composition__photo&#45;&#45;p3">-->
                     </div>
                 </div>
             </div>
@@ -74,7 +94,7 @@
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
-                        <img class="feature-box__icon" src="./img/world.svg" alt="world">
+                        <img class="feature-box__icon" src="./img/icon-world.png" alt="world">
                         <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque debitis ea est harum illum nesciunt odio provident quo sapiente.
@@ -83,7 +103,7 @@
                 </div>
                 <div class="col-1-of-4">
                     <div class="feature-box">
-                        <img class="feature-box__icon" src="./img/world.svg" alt="world">
+                        <img class="feature-box__icon" src="./img/icon-nature.png" alt="nature">
                         <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque debitis ea est harum illum nesciunt odio provident quo sapiente.
@@ -92,7 +112,7 @@
                 </div>
                 <div class="col-1-of-4">
                     <div class="feature-box">
-                        <img class="feature-box__icon" src="./img/world.svg" alt="world">
+                        <img class="feature-box__icon" src="./img/icon-find.png" alt="find">
                         <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque debitis ea est harum illum nesciunt odio provident quo sapiente.
@@ -101,7 +121,7 @@
                 </div>
                 <div class="col-1-of-4">
                     <div class="feature-box">
-                        <img class="feature-box__icon" src="./img/world.svg" alt="world">
+                        <img class="feature-box__icon" src="./img/icon-life.png" alt="life">
                         <h3 class="heading-tertiary u-margin-bottom-small">leave a healthier life</h3>
                         <p class="feature-box__text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque debitis ea est harum illum nesciunt odio provident quo sapiente.
@@ -322,7 +342,10 @@
     </main>
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="/img/logo-green-2x.png" alt="logo-footer" class="footer__logo">
+            <picture class="footer__logo">
+                <source srcset="/img/logo-green-1x.png" media="(max-width: 37.5em)">
+                <img src="/img/logo-green-2x.png" alt="logo">
+            </picture>
         </div>
         <div class="row">
             <div class="col-1-of-2">
